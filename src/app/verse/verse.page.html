@@ -1,0 +1,31 @@
+<ion-header [translucent]="true" >
+    <ion-toolbar class="homeHeader" color="Warning"   >
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="chapter"></ion-back-button>
+          </ion-buttons>
+      <ion-title class="titleHeader" >
+        {{title}}
+      </ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true"  >
+      <img src="../../assets/krishna-instructing-arjuna.jpg"  />
+  <ion-card  *ngFor=" let verse of verseData">
+     
+      <ion-card-header class="cardHeader">
+        <b>{{verse.text}}</b>
+        </ion-card-header>
+    <ion-item >
+     
+      
+    </ion-item>
+  
+    <ion-card-content class="bgimage" >
+      {{verse.meaning}}
+      <br>
+      <div class="toCenter">*****</div>
+      {{verse.transliteration}}
+    </ion-card-content>
+  </ion-card>

@@ -24,3 +24,41 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.homeHeader
+{
+    
+    text-align: center;
+    color:#fff;
+    background-color:#ffa000;
+    padding-block: 5px
+}
+.titleHeader
+{ 
+    margin-left:-50px;
+    
+}
+.cardHeader
+{
+    background-color:#ffe5b6;
+    font-size: 18px;
+    font-family: monospace;
+    color: crimson;
+    padding: 10px;
+    text-align: center;
+}
+.toCenter{
+    text-align: center
+}
+.icons
+{
+    color:#ffa000;
+}
+
+.bgimage {
+    background: url('../src/assets/pea.png') no-repeat center center ;
+    background-size: cover;
+    color:#000
+  }
+
+

@@ -1,5 +1,7 @@
 {
   "name": "Bhagavat Gita",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

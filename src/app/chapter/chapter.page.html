@@ -1,0 +1,33 @@
+<ion-header [translucent]="true" >
+    <ion-toolbar class="homeHeader" color="Warning"   >
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+          </ion-buttons>
+      <ion-title  class="titleHeader" >
+        {{title}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-content [fullscreen]="true"  >
+      <img src="../../assets/krishna.jpg"  />
+  <ion-card  *ngFor=" let chapter of chapterData">
+     
+      <ion-card-header class="cardHeader">
+          {{chapter.chapter_number}}  <b>{{chapter.name}}</b>
+        </ion-card-header>
+    <ion-item >
+      <ion-icon  name="bonfire-outline" class="icons" slot="start"> </ion-icon>
+      <ion-label   class="toCenter">{{chapter.name_meaning}}</ion-label>
+      <ion-button fill="outline" slot="end" color="danger" (click)="goToVerse(chapter.chapter_number)">{{button}}</ion-button>
+    </ion-item>
+  
+    <ion-card-content class="bgimage" >
+      {{chapter.chapter_summary}}
+    </ion-card-content>
+  </ion-card>
+  
+  
+  
+  

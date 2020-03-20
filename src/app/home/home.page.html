@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!--It Should be taken care that the mobile shoulde be connected to an Internet connection-->
+<ion-content [fullscreen]="true" >
+    <img src="../../assets/sribhagavadgita.jpg"  />
+   
+    <ion-toolbar class="homeHeader" color="Warning"   >
+        <ion-title  >
+          Bhagwat Gita
+        </ion-title>
+      </ion-toolbar>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+      <ion-card>
+          <ion-card-header>
+              <ion-card-title color="danger">Please select your language</ion-card-title>
+            </ion-card-header>
+            <ion-radio-group value="Hindi" color="danger"> 
+                <ion-item>
+                  <ion-label>Hindi</ion-label>
+                  <ion-radio slot="start" color="danger" (click)="getLanguage('hindi')" value="Hindi"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>English</ion-label>
+                    <ion-radio slot="start" color="danger"   (click)="getLanguage('english')"value="English"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+                <br>
+                <ion-button expand="block" color='danger' (click)="goToChapter()" >Proceed</ion-button>
+               
+                
+      </ion-card>  
 </ion-content>
+
+
